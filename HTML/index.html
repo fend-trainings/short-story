@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+            font-size: xx-large;
+            text-align: center;
+            color: green;
+        }
+        .intro{
+            width: 40%;
+            margin-left: 30%;
+        }
+        .img{
+            width: 10em;
+            height: 15em;
+        }
+        button{
+            background-color: green;
+            padding: 1em;
+            border-radius: 5px;
+            border: none;
+            color: white;
+           margin-left: 30%;
+           margin-bottom: 2em;
+           cursor: pointer;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        div{
+            width: fit-content;
+            margin-left: calc((100% - 53em) /2);
+            border: 3px dotted blue;
+            padding: .5em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My short story</h1>
+    <p class="intro">I go by the name <strong>Dubem</strong>. I am tall in height, chocolate in complexion and hairy.
+    I reside at Igbogene-Epie Bayelsa State. I am an IT personell, a chrisian and an Igbo man
+    my Hobbies are playing football, reading and hanging out with friends. I love meeting  new people and I look
+    forward to that everyday</p>
+    <button onclick="showImages()">see Images</button>
+    <button onclick="hideImages()">Hide Images</button>
+    <div id="div">
+        <img class="img" src="../IMG/AGHIDI EMMANUEL UKIOSEWA.jpg" alt="Image of AGHIDI EMMANUEL UKIOSEWA">
+        <img class="img" src="../IMG/OKOCHA PHILIP OLISAELOKA.jpg" alt="Image of OKOCHA PHILIP OLISAELOKA">
+        <img class="img" src="../IMG/OKOIHUE DAVID ABUNENE.jpg" alt="Image of OKOIHUE DAVID ABUNENE">
+        <img class="img" src="../IMG/OKONEDO EMMANUEL AVWEROSUOGHENE.jpg" alt="Image of OKONEDO EMMANUEL AVWEROSUOGHENE">
+        <img class="img" src="../IMG/YAYI FELIX OLATUNJI.jpg" alt="Image of YAYI FELIX OLATUNJI">
+     
+    </div>
+    <script>
+        let div = document.getElementById('div');
+        div.style.visibility = 'hidden';
+        let showImages = () => {
+            div.style.visibility = 'visible'
+        }
+        function hideImages() {
+            div.style.visibility = 'hidden';
+        }
+    </script>
+    <!-- <img class="img" src="../IMG/schoool5.jpg" alt="Images of school children"> -->
+</body>
+</html>
